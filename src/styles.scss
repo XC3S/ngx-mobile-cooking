@@ -54,13 +54,13 @@
     background-color: #fff;
     left: 0;
     width: 100vw;
-    bottom: -100%;
+    bottom: -100vh;
     height: 100vh;
 
     transition: bottom 0.66s ease;
 
     &.open {
-        bottom: 0%;
+        bottom: 0vh;
     }
 
     .close {

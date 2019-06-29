@@ -1,0 +1,95 @@
+/* You can add global styles to this file, and also import other style files */
+
+.am-carousel-wrap-dot > span {
+    display: block;
+    width: 16px;
+    height: 16px;
+    margin: 15px 5px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0px 0px 5px #000c;
+}
+
+.am-carousel-wrap-dot-active > span {
+    background: #00ffed;
+}
+
+.dot-indicator {
+    top: 0;
+}
+
+/*  */
+
+.detail-button {
+    transform: translateX(-50%);
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+
+    h2 {
+        color: #fff;
+        text-align: center;
+        font-family: 'Monaco', 'Consolas', sans-serif;
+    }
+
+    @keyframes arrowanimation {
+        0% {
+            transform: translateY( 0px);
+        }
+        50% {
+            transform: translateY( -15px);
+        }
+        100% {
+            transform: translateY( 0px);
+        }
+    }
+
+    img {
+        animation: arrowanimation 2s infinite;
+    }
+}
+
+.informations {
+    position: absolute;
+    background-color: #fff;
+    left: 0;
+    width: 100vw;
+    bottom: -100%;
+    height: 100vh;
+
+    transition: bottom 0.66s ease;
+
+    &.open {
+        bottom: 0%;
+    }
+
+    .close {
+        position: absolute;
+        right: 0;
+        top: 0;
+        background: #fff;
+    }
+
+    ul {
+        li {
+            position: relative;
+            padding-left: 15px;
+
+            &:before {
+                content: "";
+                display: block;
+                position: absolute;
+                width: 7.5px;
+                height: 7.5px;
+                left: 0px;
+                top: 50%;
+                transform: translateY(-50%);
+                background-color: #00ffed;
+            }
+        }
+    }
+}
+
+body {
+    font-family: 'Monaco', 'Consolas', sans-serif;
+}

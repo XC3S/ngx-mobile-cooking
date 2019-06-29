@@ -1,0 +1,35 @@
+<!-- NG-ZORRO-MOBILE -->
+
+<Carousel [infinite]="true"
+          [vertical]="false"
+          [selectedIndex]="1"
+          (beforeChange)="beforeChange($event)"
+          (afterChange)="afterChange($event)"
+>
+  <CarouselSlide *ngFor="let item of state.data">
+    <div class="slide">
+      <img [src]="item"/>
+    </div>
+  </CarouselSlide>
+</Carousel>
+
+
+<div class="detail-button" (click)="open()">
+  <img src="https://img.icons8.com/ios/100/ffffff/collapse-arrow.png">
+  <h2>Details</h2>
+</div>
+
+<div class="informations" [ngClass]="{'open': opened}">
+  <WingBlank size='lg'>
+    <img  (click)="open()" class="close" src="https://img.icons8.com/ios/60/000000/multiply.png">
+
+    <WhiteSpace size='lg'></WhiteSpace>
+    <h1>Test</h1>
+    <WhiteSpace size='lg'></WhiteSpace>
+    <ul>
+      <li>Test</li>
+      <li>Test</li>
+      <li>Test</li>
+    </ul>
+  </WingBlank>
+</div>

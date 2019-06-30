@@ -131,7 +131,8 @@
 
 body,html {
     font-family: 'Monaco', 'Consolas', sans-serif;
-    position: relative;
+    position: fixed;
     overflow: hidden;
     height: 100%;
+    width: 100%;
 }

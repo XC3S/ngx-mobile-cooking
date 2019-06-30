@@ -80,11 +80,15 @@
 }
 
 .informations {
+    @supports(padding-top: max(0px)) {
+        padding-top: var(--safe-area-inset-top);
+    }
 
     .info-container {
-        position: relative
-        ;
-        @supports(padding-top: max(0px)) {
+        position: relative;
+       
+        @supports( margin-top: max(0px)) {
+            
             margin-top: var(--safe-area-inset-top);
         }
     }
@@ -130,6 +134,10 @@
 }
 
 body,html {
+    @supports(padding-top: max(0px)) {
+        padding-top: var(--safe-area-inset-top);
+    }
+    
     font-family: 'Monaco', 'Consolas', sans-serif;
     position: fixed;
     overflow: hidden;

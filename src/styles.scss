@@ -155,10 +155,6 @@
 }
 
 body,html {
-    @supports(padding-top: max(0px)) {
-        padding-top: var(--safe-area-inset-top);
-    }
-
     font-family: 'Monaco', 'Consolas', sans-serif;
     position: fixed;
     overflow: hidden;

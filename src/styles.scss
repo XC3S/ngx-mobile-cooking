@@ -93,13 +93,13 @@
     background-color: #fff;
     left: 0;
     width: 100vw;
-    bottom: -100vh;
+    top: 100vh;
     height: 100vh;
 
-    transition: bottom 0.66s ease;
+    transition: top 0.66s ease;
 
     &.open {
-        bottom: 0vh;
+        top: 0vh;
     }
 
     .close {

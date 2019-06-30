@@ -25,6 +25,29 @@
     }          
 }
 
+.slide {
+    height: 100vh;
+    position: relative;
+
+    @supports( margin-top: max(0px)) {
+        margin-top: var(--safe-area-inset-top);
+        margin-left: var(--safe-area-inset-left);
+        margin-right: var(--safe-area-inset-right);
+        margin-bottom: var(--safe-area-inset-bottom);
+    }
+
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        pointer-events: none;
+    }
+}
+
 .am-carousel-wrap-dot > span {
     display: block;
     width: 16px;
@@ -80,16 +103,14 @@
 }
 
 .informations {
-    @supports(padding-top: max(0px)) {
-        padding-top: var(--safe-area-inset-top);
-    }
-
     .info-container {
         position: relative;
        
         @supports( margin-top: max(0px)) {
-            
             margin-top: var(--safe-area-inset-top);
+            margin-left: var(--safe-area-inset-left);
+            margin-right: var(--safe-area-inset-right);
+            margin-bottom: var(--safe-area-inset-bottom);
         }
     }
 
@@ -137,7 +158,7 @@ body,html {
     @supports(padding-top: max(0px)) {
         padding-top: var(--safe-area-inset-top);
     }
-    
+
     font-family: 'Monaco', 'Consolas', sans-serif;
     position: fixed;
     overflow: hidden;

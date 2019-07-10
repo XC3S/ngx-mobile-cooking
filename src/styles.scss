@@ -29,11 +29,11 @@
     height: 100vh;
     position: relative;
 
-    @supports( margin-top: max(0px)) {
-        margin-top: var(--safe-area-inset-top);
-        margin-left: var(--safe-area-inset-left);
-        margin-right: var(--safe-area-inset-right);
-        margin-bottom: var(--safe-area-inset-bottom);
+    @supports( padding-top: max(0px)) {
+        padding-top: var(--safe-area-inset-top);
+        padding-left: var(--safe-area-inset-left);
+        padding-right: var(--safe-area-inset-right);
+        padding-bottom: var(--safe-area-inset-bottom);
     }
 
     img {

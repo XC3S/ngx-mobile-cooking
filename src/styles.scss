@@ -172,7 +172,9 @@ body,html {
 }
 
 .test-1 {
-    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
     background: green;
     color: white;
     box-sizing: border-box;

@@ -172,16 +172,18 @@ body,html {
 }
 
 .test-1 {
-    height: 100vh;
+    height: 100%;
     background: green;
     color: white;
-
+    box-sizing: border-box;
+    /*
     @supports( padding-top: env(safe-area-inset-top)) {
         padding-top: var(--safe-area-inset-top);
         padding-left: var(--safe-area-inset-left);
         padding-right: var(--safe-area-inset-right);
         padding-bottom: var(--safe-area-inset-bottom);
     }
+    */
 }
 
 .test-2 {
